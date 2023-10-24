@@ -1,38 +1,77 @@
-.App {
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+a,
+p,
+h1,
+label,
+h2 {
+  color: aqua;
+}
+footer {
+  bottom: 0;
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-self: end;
+  padding: 3px;
   color: white;
+  margin-top: auto;
 }
-
-.App-link {
-  color: #61dafb;
+.preloader {
+  width: 50%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+.preload-3 {
+  position: relative;
+  margin-bottom: 100px;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  &:before,
+  &:after {
+    position: absolute;
+
+    content: " ";
+
+    width: 20px;
+    height: 20px;
+
+    border-radius: 50%;
   }
-  to {
-    transform: rotate(360deg);
+
+  &:before {
+    background: orange;
+
+    animation: preload-3-1 1.5s infinite ease-in-out;
+  }
+  &:after {
+    background: yellow;
+
+    left: 22px;
+
+    animation: preload-3-2 1.5s infinite ease-in-out;
+  }
+}
+
+@keyframes preload-3-1 {
+  0%,
+  100% {
+    transform: translateX(0) rotate(0);
+  }
+  50% {
+    transform: translateX(50px) scale(1.2) rotate(260deg);
+    border-radius: 0;
+  }
+}
+
+@keyframes preload-3-2 {
+  0%,
+  100% {
+    transform: translateX(0) rotate(0);
+  }
+  50% {
+    transform: translateX(-50px) scale(1.2) rotate(-260deg);
+    border-radius: 0;
   }
 }
