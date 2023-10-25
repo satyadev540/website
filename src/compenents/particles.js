@@ -3,7 +3,6 @@ import Particles from "particles.js";
 
 const Particle = () => {
   useEffect(() => {
-    // Configure the Particle.js options
     const particlesConfig = {
       particles: {
         number: { value: 173, density: { enable: true, value_area: 800 } },

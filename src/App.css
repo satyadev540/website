@@ -27,7 +27,7 @@ footer {
 .preload-3 {
   position: relative;
   margin-bottom: 100px;
-
+  /* eslint-disable-next-line */
   &:before,
   &:after {
     position: absolute;
