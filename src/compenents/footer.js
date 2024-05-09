@@ -1,7 +1,7 @@
 import React from "react";
 function Footer() {
   return (
-    <footer className=" body-font">
+    <footer className="body-font">
       <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
         <p
           class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4"
@@ -39,7 +39,7 @@ function Footer() {
           </a>
 
           <a
-            href="https://www.instagram.com/_satya_dev__/?igshid=NzZlODBkYWE4Ng%3D%3D"
+            href="https://www.instagram.com/adrenaline_junkie0202/?igshid=NzZlODBkYWE4Ng%3D%3D"
             target="_blank"
             rel="noreferrer"
             class="ml-3 text-gray-500"

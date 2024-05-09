@@ -5,7 +5,7 @@ function Projects() {
       <div class="container px-5 py-24 mx-auto">
         <h1
           class="sm:text-3xl text-2xl font-medium title-font text-center text-gray-900 mb-20"
-          style={{ color: "white" }}
+          style={{ color: "bisque" }}
         >
           Satya's
           <br class="hidden sm:block"></br>

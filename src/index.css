@@ -3,6 +3,15 @@
 @tailwind utilities;
 html {
   height: 100%;
+  background: rgb(0, 22, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 22, 36, 1) 6%,
+    rgba(116, 9, 121, 1) 46%,
+    rgba(0, 185, 255, 1) 91%
+  );
+  margin: 0;
+  padding: 0;
 }
 body {
   margin: 0;
@@ -11,8 +20,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
-  min-height: 82vh;
+  padding: 0;
+  height: 100%;
   display: flex;
   flex-direction: column;
 }

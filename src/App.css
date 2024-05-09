@@ -4,19 +4,81 @@
 
 a,
 p,
-h1,
 label,
 h2 {
-  color: aqua;
+  color: bisque;
 }
 footer {
   bottom: 0;
+  left: 0;
+  right: 0;
   text-align: center;
-  justify-self: end;
-  padding: 3px;
-  color: white;
-  margin-top: auto;
+  width: 100%;
+  z-index: -1;
 }
+nav {
+  top: 0px;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 2px;
+}
+nav a {
+  background: rgb(244, 232, 96);
+  background: linear-gradient(
+    90deg,
+    rgba(244, 232, 96, 1) 8%,
+    rgba(254, 254, 254, 1) 47%,
+    rgba(0, 185, 255, 1) 89%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  padding: 10px 50px;
+  text-decoration: none;
+  font-size: 25px;
+}
+.main-container {
+  display: block;
+  margin: 5px;
+}
+.containers {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.text {
+  font-size: 50px;
+  padding-left: 20px;
+}
+h1 {
+  color: wheat;
+}
+.text2 {
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5px;
+  width: 50%;
+  margin: auto;
+  padding: 50px;
+  border: 3px solid white;
+  border-top-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+  border-top-right-radius: 10px;
+}
+p {
+  color: blanchedalmond;
+  font-size: 20px;
+  text-align: justify;
+}
+
 .preloader {
   width: 50%;
   height: 50%;
