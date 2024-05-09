@@ -9,6 +9,7 @@ import Projects from "./compenents/projects";
 import Footer from "./compenents/footer";
 import Skills from "./compenents/skills";
 import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 function App() {
   const [loading, setLoading] = useState(true);
 
@@ -20,6 +21,7 @@ function App() {
   return (
     <div className="App">
       <Analytics />
+      <SpeedInsights />
       {loading ? (
         <Preloader />
       ) : (
