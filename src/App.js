@@ -7,8 +7,8 @@ import React, { useState, useEffect } from "react";
 import Preloader from "./compenents/preloader";
 import Projects from "./compenents/projects";
 import Footer from "./compenents/footer";
-import Particle from "./compenents/particles";
 import Skills from "./compenents/skills";
+import { Analytics } from "@vercel/analytics/react";
 function App() {
   const [loading, setLoading] = useState(true);
 
@@ -19,6 +19,7 @@ function App() {
   }, []);
   return (
     <div className="App">
+      <Analytics />
       {loading ? (
         <Preloader />
       ) : (
